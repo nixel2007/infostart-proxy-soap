@@ -1,0 +1,1539 @@
+<s:schema elementFormDefault="qualified" targetNamespace="http://web.cbr.ru/" 
+    xmlns:s="http://www.w3.org/2001/XMLSchema">
+    <s:element name="SaldoXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SaldoXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SaldoXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ROISfixXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ROISfixXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="ROISfixXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="RuoniaXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="RuoniaXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="RuoniaXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDepoXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDepoXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="OstatDepoXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ValIntDayXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ValIntDayXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="ValIntDayXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ValIntDay">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ValIntDayResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="ValIntDayResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDepo">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDepoResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="OstatDepoResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ROISfix">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="ROISfixResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="ROISfixResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Ruonia">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="RuoniaResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="RuoniaResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrf7D">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrf7DResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="mrrf7DResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrf7DXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrf7DXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="mrrf7DXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="RepoDebtUSD">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="RepoDebtUSDResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="RepoDebtUSDResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="RepoDebtUSDXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="RepoDebtUSDXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="RepoDebtUSDXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrf">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrfResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="mrrfResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrfXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="mrrfXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="mrrfXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Saldo">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SaldoResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SaldoResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="NewsInfoXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="NewsInfoXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="NewsInfoXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OmodInfoXML">
+        <s:complexType />
+    </s:element>
+    <s:element name="OmodInfoXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="OmodInfoXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="XVol">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="XVolResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="XVolResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="XVolXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="XVolXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="XVolXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="MainInfoXML">
+        <s:complexType />
+    </s:element>
+    <s:element name="MainInfoXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="MainInfoXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="AllDataInfoXML">
+        <s:complexType />
+    </s:element>
+    <s:element name="AllDataInfoXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="AllDataInfoXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="NewsInfo">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="NewsInfoResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="NewsInfoResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDayTotal">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDayTotalResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapDayTotalResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDayTotalXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDayTotalXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapDayTotalXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDynamicXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDynamicXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapDynamicXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSDVolXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSDVolXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapInfoSellUSDVolXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSDVol">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSDVolResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapInfoSellUSDVolResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSD">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSDResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapInfoSellUSDResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSDXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapInfoSellUSDXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapInfoSellUSDXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BiCurBaseXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BiCurBaseXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="BiCurBaseXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BiCurBase">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BiCurBaseResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="BiCurBaseResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BiCurBacketXML">
+        <s:complexType />
+    </s:element>
+    <s:element name="BiCurBacketXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="BiCurBacketXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BiCurBacket">
+        <s:complexType />
+    </s:element>
+    <s:element name="BiCurBacketResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="BiCurBacketResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDynamic">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapDynamicResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapDynamicResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapMonthTotal">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapMonthTotalResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapMonthTotalResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapMonthTotalXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="SwapMonthTotalXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="SwapMonthTotalXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="MKR">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="MKRResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="MKRResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="MKRXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="MKRXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="MKRXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DV">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DVResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="DVResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DVXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DVXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="DVXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Repo_debt">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Repo_debtResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="Repo_debtResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Repo_debtXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Repo_debtXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="Repo_debtXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Coins_base">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Coins_baseResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="Coins_baseResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Coins_baseXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Coins_baseXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="Coins_baseXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="FixingBase">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="FixingBaseResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="FixingBaseResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="FixingBaseXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="FixingBaseXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="FixingBaseXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Overnight">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OvernightResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="OvernightResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OvernightXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OvernightXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="OvernightXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="Bauction">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BauctionResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="BauctionResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BauctionXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="BauctionXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="BauctionXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DepoDynamicXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DepoDynamicXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="DepoDynamicXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DepoDynamic">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DepoDynamicResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="DepoDynamicResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDynamicXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDynamicXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="OstatDynamicXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDynamic">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="OstatDynamicResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="OstatDynamicResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DragMetDynamicXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DragMetDynamicXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="DragMetDynamicXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DragMetDynamic">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="fromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="DragMetDynamicResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="DragMetDynamicResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetLatestDateTime">
+        <s:complexType />
+    </s:element>
+    <s:element name="GetLatestDateTimeResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="GetLatestDateTimeResult" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetLatestDate">
+        <s:complexType />
+    </s:element>
+    <s:element name="GetLatestDateResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetLatestDateResult" type="s:string" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetLatestDateTimeSeld">
+        <s:complexType />
+    </s:element>
+    <s:element name="GetLatestDateTimeSeldResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="GetLatestDateTimeSeldResult" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetLatestDateSeld">
+        <s:complexType />
+    </s:element>
+    <s:element name="GetLatestDateSeldResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetLatestDateSeldResult" type="s:string" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="EnumValutesXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="Seld" type="s:boolean" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="EnumValutesXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="EnumValutesXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="EnumValutes">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="Seld" type="s:boolean" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="EnumValutesResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="EnumValutesResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetLatestReutersDateTime">
+        <s:complexType />
+    </s:element>
+    <s:element name="GetLatestReutersDateTimeResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="GetLatestReutersDateTimeResult" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="EnumReutersValutesXML">
+        <s:complexType />
+    </s:element>
+    <s:element name="EnumReutersValutesXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="EnumReutersValutesXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="EnumReutersValutes">
+        <s:complexType />
+    </s:element>
+    <s:element name="EnumReutersValutesResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="EnumReutersValutesResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursOnDateXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="On_date" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursOnDateXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetReutersCursOnDateXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursOnDate">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="On_date" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursOnDateResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetReutersCursOnDateResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursDynamicXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="NumCode" type="s:int" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursDynamicXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetReutersCursDynamicXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursDynamic">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="NumCode" type="s:int" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetReutersCursDynamicResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetReutersCursDynamicResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursDynamicXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+                <s:element minOccurs="0" maxOccurs="1" name="ValutaCode" type="s:string" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursDynamicXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetCursDynamicXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursDynamic">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="FromDate" type="s:dateTime" />
+                <s:element minOccurs="1" maxOccurs="1" name="ToDate" type="s:dateTime" />
+                <s:element minOccurs="0" maxOccurs="1" name="ValutaCode" type="s:string" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursDynamicResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetCursDynamicResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursOnDateXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="On_date" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursOnDateXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetCursOnDateXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetSeldCursOnDateXML">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="On_date" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetSeldCursOnDateXMLResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetSeldCursOnDateXMLResult">
+                    <s:complexType mixed="true">
+                        <s:sequence>
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetSeldCursOnDate">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="On_date" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetSeldCursOnDateResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetSeldCursOnDateResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursOnDate">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="1" maxOccurs="1" name="On_date" type="s:dateTime" />
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+    <s:element name="GetCursOnDateResponse">
+        <s:complexType>
+            <s:sequence>
+                <s:element minOccurs="0" maxOccurs="1" name="GetCursOnDateResult">
+                    <s:complexType>
+                        <s:sequence>
+                            <s:element ref="s:schema" />
+                            <s:any />
+                        </s:sequence>
+                    </s:complexType>
+                </s:element>
+            </s:sequence>
+        </s:complexType>
+    </s:element>
+</s:schema>
